@@ -1,0 +1,64 @@
+{
+    "credential": [
+        {
+            "area": "pulp2",
+            "dbtype": "oracle",
+            "user": "USER",
+            "password": "PASSWORD",
+            "host": "*.*.*.222",
+            "port": 1521,
+            "service": "SERVICE",
+            "views": [
+                "SAPUSER.WEB_API_DATA1_V","USER.WEB_API_CALCULATED_DATA_V"
+            ]
+        },
+        {
+            "area": "apm3",
+            "dbtype": "oracle",
+            "user": "USER",
+            "password": "PASSWORD",
+            "host": "*.*.*.196",
+            "port": 1521,
+            "service": "SERVICE",
+            "views": [
+                "USER.APM3_IT_APP_DATA_V", "USER.DT_APM3_PULP2_001_V"
+            ]
+        },
+        {
+            "area": "nps",
+            "dbtype": "oracle",
+            "user": "USER",
+            "password": "PASSWORD",
+            "host": "*.*.*.245",
+            "port": 1521,
+            "service": "SERVICE",
+            "views": [
+                "USER.API_NPS_TO_PULP2_01_V", "USER.API_PROCS_DATA_XFER_02_V"
+            ]
+        },
+        {
+            "area": "pb5a",
+            "dbtype": "oracle",
+            "user": "USER",
+            "password": "PASSWORD",
+            "host": "*.*.*.231",
+            "port": 1521,
+            "service": "SERVICE",
+            "views": [
+                "USER.V_SRC_DGW_PB5A","USER.V_SRC_WEBP1_MAIN","USER.V_SRC_WEBP2_MAIN", "USER.PB5A_IT_APP_DATA_V"
+            ]
+        },
+        {
+            "area": "pm12",
+            "dbtype": "mysql",
+            "user": "USER",
+            "password": "PASSWORD",
+            "host": "*.*.*.8",
+            "port": 3306,
+            "database": "YOUR-DATABASE",
+            "views": [
+                "pm_pulp2"
+            ]
+        }
+    ]
+}
